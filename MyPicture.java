@@ -8,8 +8,8 @@
 public class MyPicture
 {
     // instance variables - replace the example below with your own
-    private Square wall;
-    private Square window;
+    private Square lseat;
+    private Square rseat;
     private Triangle roof;
     private Circle tire;
     private Circle tire1;
@@ -23,8 +23,8 @@ public class MyPicture
     public MyPicture()
     {
         // initialise instance variables
-        wall = new Square();
-        window = new Square();
+        lseat = new Square();
+        rseat = new Square();
         roof = new Triangle();  
         tire = new Circle();
         tire1 = new Circle();
@@ -39,17 +39,17 @@ public class MyPicture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(40);
-            wall.changeSize(60);
-            wall.changeColor("red");
-            wall.makeVisible();
+            lseat.moveHorizontal(-140);
+            lseat.moveVertical(40);
+            lseat.changeSize(60);
+            lseat.changeColor("black");
+            lseat.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-50);
-            window.moveVertical(40);
-            window.changeSize(60);
-            window.makeVisible();
+            rseat.changeColor("black");
+            rseat.moveHorizontal(-50);
+            rseat.moveVertical(42);
+            rseat.changeSize(60);
+            rseat.makeVisible();
     
             roof.changeSize(60, 180);
             roof.moveHorizontal(30);
