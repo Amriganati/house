@@ -10,6 +10,8 @@ public class MyPicture
     // instance variables - replace the example below with your own
     private Square lseat;
     private Square rseat;
+    private Square chasr;
+    private Square chasl;
     private Triangle roof;
     private Circle tire;
     private Circle tire1;
@@ -25,6 +27,8 @@ public class MyPicture
         // initialise instance variables
         lseat = new Square();
         rseat = new Square();
+        chasr = new Square();
+        chasl = new Square();
         roof = new Triangle();  
         tire = new Circle();
         tire1 = new Circle();
@@ -50,7 +54,19 @@ public class MyPicture
             rseat.moveVertical(42);
             rseat.changeSize(60);
             rseat.makeVisible();
-    
+            
+            chasr.changeColor("green");
+            chasr.moveHorizontal(-65);
+            chasr.moveVertical(100);
+            chasr.changeSize(70);
+            chasr.makeVisible();
+            
+            chasl.changeColor("green");
+            chasl.moveHorizontal(-135);
+            chasl.moveVertical(100);
+            chasl.changeSize(70);
+            chasl.makeVisible();
+            
             roof.changeSize(60, 180);
             roof.moveHorizontal(30);
             roof.moveVertical(35);
